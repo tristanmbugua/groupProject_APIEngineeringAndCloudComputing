@@ -30,3 +30,5 @@ C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEn
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\bankIt.pdb
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\bankIt.genruntimeconfig.cache
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\ref\bankIt.dll
+C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\bankIt.sourcelink.json

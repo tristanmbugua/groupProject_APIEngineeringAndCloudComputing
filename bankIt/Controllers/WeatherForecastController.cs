@@ -21,11 +21,26 @@ namespace bankIt.Controllers
         [HttpGet(Name = "WeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            /*SQLDriver.cmd.CommandText = "SELECT * FROM bankIt.accounts;";
+            return SQLDriver.cmd.ExecuteReaderAsync().Result;*/
+            
+            String returnVal = "";
+
+            var reader = SQLDriver.ReaderQuery("SELECT balance FROM bankIt.accounts WHERE username = \"tristan\" && password = \"tristan\";");
+
+            while (reader.Read())
+            {
+                returnVal = reader.GetString(0);
+            }
+            
+
+            /*var result = SQLDriver.cmd.ExecuteReaderAsync().Result;*/
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = returnVal
             })
             .ToArray();
         }
