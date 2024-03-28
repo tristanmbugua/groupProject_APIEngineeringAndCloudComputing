@@ -32,3 +32,39 @@ C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEn
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\ref\bankIt.dll
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\user\OneDrive\Desktop\Life\career\.school\.centennial\_winter2024\APIEngineeringAndCloudComputing\groupProject\groupProject_APIEngineeringAndCloudComputing\bankIt\obj\Debug\net8.0\bankIt.sourcelink.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\appsettings.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\bankIt.exe
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\bankIt.deps.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\bankIt.runtimeconfig.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\bankIt.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\bankIt.pdb
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.csproj.AssemblyReference.cache
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.AssemblyInfoInputs.cache
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.AssemblyInfo.cs
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.csproj.CoreCompileInputs.cache
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.sourcelink.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets\msbuild.bankIt.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets\msbuild.build.bankIt.props
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.bankIt.props
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.bankIt.props
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\scopedcss\bundle\bankIt.styles.css
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.csproj.Up2Date
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\refint\bankIt.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.pdb
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\bankIt.genruntimeconfig.cache
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\obj\Debug\net8.0\ref\bankIt.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\nelso\Desktop\Centennial College\Semester 5\COMP 306 - API Engineering and Cloud Computing\301064831_301141338 (Le & Mbugua)_Lab 4\bankIt\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

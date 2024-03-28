@@ -21,9 +21,9 @@ namespace bankIt.Controllers
         [HttpGet(Name = "WeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            /*SQLDriver.cmd.CommandText = "SELECT * FROM bankIt.accounts;";
-            return SQLDriver.cmd.ExecuteReaderAsync().Result;*/
-            
+            //SQLDriver.cmd.CommandText = "SELECT * FROM bankIt.accounts;";
+            //return SQLDriver.cmd.ExecuteReaderAsync().Result;
+
             String returnVal = "";
 
             var reader = SQLDriver.ReaderQuery("SELECT balance FROM bankIt.accounts WHERE username = \"tristan\" && password = \"tristan\";");
