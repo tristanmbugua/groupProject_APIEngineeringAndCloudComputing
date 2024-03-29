@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Numerics;
 
 namespace bankIt.Controllers
 {
@@ -36,21 +37,27 @@ namespace bankIt.Controllers
         [HttpPut]
         public Object Put([FromBody] UpdateChequing request)
         {
-            SQLDriver.cmd.CommandText = $"SELECT chequing FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
+            try {
+                SQLDriver.cmd.CommandText = $"SELECT chequing FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
+                var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
 
-            result.Read();
-            int val = Convert.ToInt32(result[0]);
-            result.Close();
+                result.Read();
+                int val = Convert.ToInt32(result[0]);
+                result.Close();
 
-            Double newBalance = val + request.credit;
+                Double newBalance = val + request.credit;
 
-            SQLDriver.cmd.CommandText = $"UPDATE bankIt.accounts SET chequing = {newBalance} WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            if (SQLDriver.cmd.ExecuteNonQueryAsync().Result == 1)
-            {
-                return "Operation Successful!";
+                SQLDriver.cmd.CommandText = $"UPDATE bankIt.accounts SET chequing = {newBalance} WHERE username = \"{request.username}\" && password = \"{request.password}\";";
+                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result == 1)
+                {
+                    return $"Chequing account for '{request.username}' successfully updated. New balance: {newBalance}.";
+                }
+                return "Failed to update the chequing account. Please check the details and try again.";
             }
-            return "Operation Failure!";
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An internal error occurred while processing the request. Please try again later.");
+            }
         }
     }
 }
