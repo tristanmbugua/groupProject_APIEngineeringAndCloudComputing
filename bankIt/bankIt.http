@@ -1,6 +1,6 @@
 @bankIt_HostAddress = http://localhost:5229
 
-GET {{bankIt_HostAddress}}/weatherforecast/
+GET {{bankIt_HostAddress}}/chequing/
 Accept: application/json
 
 ###
