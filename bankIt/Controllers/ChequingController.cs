@@ -24,14 +24,29 @@ namespace bankIt.Controllers
         [HttpGet]
         public Object Get([FromBody] ViewChequing request)
         {
-            SQLDriver.cmd.CommandText = $"SELECT chequing FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
+            try
+            {
+                SQLDriver.cmd.CommandText = $"SELECT chequing FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
 
-            result.Read();
-            int resultValue = Convert.ToInt32(result[0]);
-            result.Close();
-
-            return resultValue;
+                using (var result = SQLDriver.cmd.ExecuteReaderAsync().Result)
+                {
+                    if (result.Read())
+                    {
+                        int resultValue = Convert.ToInt32(result[0]);
+                        result.Close();
+                        return $"The current chequing account balance for '{request.username}' is: {result}.";
+                    }
+                    else
+                    {
+                        result.Close();
+                        return $"Account information for '{request.username}' could not be found or the credentials are incorrect.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while attempting to retrieve the chequing account balance.");
+            }
         }
 
         [HttpPut]
