@@ -24,14 +24,29 @@ namespace bankIt.Controllers
         [HttpGet]
         public Object Get([FromBody] ViewCredit request)
         {
-            SQLDriver.cmd.CommandText = $"SELECT creditCard FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
+            try
+            {
+                SQLDriver.cmd.CommandText = $"SELECT creditCard FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
 
-            result.Read();
-            int resultValue = Convert.ToInt32(result[0]);
-            result.Close();
-
-            return resultValue;
+                using (var result = SQLDriver.cmd.ExecuteReaderAsync().Result)
+                {
+                    if (result.Read())
+                    {
+                        int resultValue = Convert.ToInt32(result[0]);
+                        result.Close();
+                        return $"Credit card account successfully retrieved: {resultValue}.";
+                    }
+                    else
+                    {
+                        result.Close();
+                        return "Account not found or incorrect credentials.";
+                    }
+                } ;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An internal error occurred while processing the request. Please try again later.");
+            }
         }
 
         [HttpPut]
