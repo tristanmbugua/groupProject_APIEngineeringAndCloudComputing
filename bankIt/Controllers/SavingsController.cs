@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Principal;
 
 namespace bankIt.Controllers
 {
@@ -24,22 +25,28 @@ namespace bankIt.Controllers
         [HttpGet]
         public Object Get([FromBody] ViewSavings request)
         {
-            SQLDriver.cmd.CommandText = $"SELECT savings FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            using (var result = SQLDriver.cmd.ExecuteReaderAsync().Result)
+            try
             {
-                if (result.Read())
+                SQLDriver.cmd.CommandText = $"SELECT savings FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
+                using (var result = SQLDriver.cmd.ExecuteReaderAsync().Result)
                 {
-                    var savings = Convert.ToInt32(result["savings"]);
-                    result.Close();
-                    return ($"Current savings balance: {savings}");
-
-                }
-                else
-                {
-                    result.Close();
-                    return $"Account not found for username: {request.username}.";
-                }
+                    if (result.Read())
+                    {
+                        int resultValue = Convert.ToInt32(result[0]);
+                        result.Close();
+                        return $"The current saving balance for '{request.username}' is: {resultValue}.";
+                    }
+                    else
+                    {
+                        result.Close();
+                        return $"No saving information found for username: '{request.username}'. Please verify the account details.";
+                    }
+                };
+            }catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while attempting to retrieve the saving account.");
             }
+
         }
 
         [HttpPut]
@@ -47,7 +54,6 @@ namespace bankIt.Controllers
         {
             try {
                 SQLDriver.cmd.CommandText = $"SELECT savings FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-               
                 var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
 
                 result.Read();
