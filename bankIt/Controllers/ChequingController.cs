@@ -34,7 +34,7 @@ namespace bankIt.Controllers
                     {
                         int resultValue = Convert.ToInt32(result[0]);
                         result.Close();
-                        return $"The current chequing account balance for '{request.username}' is: {result}.";
+                        return $"The current chequing account balance for '{request.username}' is: {resultValue}.";
                     }
                     else
                     {
