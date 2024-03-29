@@ -39,13 +39,13 @@ namespace bankIt.Controllers
                     else
                     {
                         result.Close();
-                        return "Account not found or incorrect credentials.";
+                        return $"Account information for '{request.username}' could not be found or the credentials are incorrect.";
                     }
-                } ;
+                };
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "An internal error occurred while processing the request. Please try again later.");
+                return StatusCode(500, "An error occurred while attempting to retrieve the credit card account.");
             }
         }
 
