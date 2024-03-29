@@ -45,7 +45,7 @@ namespace bankIt.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "An error occurred while attempting to retrieve the chequing account balance.");
+                return StatusCode(500, "An error occurred while attempting to retrieve the chequing account.");
             }
         }
 
