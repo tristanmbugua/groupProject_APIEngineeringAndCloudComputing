@@ -34,12 +34,12 @@ namespace bankIt.Controllers
                     {
                         int resultValue = Convert.ToInt32(result[0]);
                         result.Close();
-                        return $"Credit card account successfully retrieved: {resultValue}.";
+                        return $"The current credit card balance for '{request.username}' is: {resultValue}.";
                     }
                     else
                     {
                         result.Close();
-                        return $"Account information for '{request.username}' could not be found or the credentials are incorrect.";
+                        return $"No credit information found for username: '{request.username}'. Please verify the account details.";
                     }
                 };
             }
