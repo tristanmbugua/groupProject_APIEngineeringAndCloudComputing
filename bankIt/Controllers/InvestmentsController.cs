@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Security.Principal;
 
 namespace bankIt.Controllers
 {
@@ -24,14 +26,29 @@ namespace bankIt.Controllers
         [HttpGet]
         public Object Get([FromBody] ViewCredit request)
         {
-            SQLDriver.cmd.CommandText = $"SELECT investments FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-            var result = SQLDriver.cmd.ExecuteReaderAsync().Result;
+            try
+            {
+                SQLDriver.cmd.CommandText = $"SELECT investments FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
+                using (var result = SQLDriver.cmd.ExecuteReaderAsync().Result)
+                {
+                    if (result.Read())
+                    {
+                        int resultValue = Convert.ToInt32(result[0]);
+                        result.Close();
+                        return $"The current investment balance for '{request.username}' is: {resultValue}.";
+                    }
+                    else
+                    {
+                        result.Close();
+                        return $"No investment information found for username: '{request.username}'. Please verify the account details.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while attempting to retrieve the investment account.");
+            }
 
-            result.Read();
-            int resultValue = Convert.ToInt32(result[0]);
-            result.Close();
-
-            return resultValue;
         }
 
         [HttpPut]
