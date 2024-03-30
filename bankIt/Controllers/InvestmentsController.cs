@@ -76,7 +76,7 @@ namespace bankIt.Controllers
                 Double newBalance = val + request.credit;
 
                 SQLDriver.cmd.CommandText = $"UPDATE bankIt.accounts SET investments = {newBalance} WHERE username = \"{request.username}\" && password = \"{request.password}\";";
-                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result == 1)
+                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result > 0)
                 {
                     return $"Investments successfully updated for {request.username}. New balance: {newBalance}.";
                 }

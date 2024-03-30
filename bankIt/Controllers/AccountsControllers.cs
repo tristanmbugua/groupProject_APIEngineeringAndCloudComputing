@@ -20,8 +20,9 @@ namespace bankIt.Controllers
         public Object Get([FromBody] AccountRequest request)
         {
             try {
-                SQLDriver.cmd.CommandText = $"INSERT INTO bankIt.accounts(username, password) VALUES(\"{request.username}\", \"{request.password}\");";
-                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result == 1)
+                SQLDriver.cmd.CommandText = $"INSERT INTO bankIt.accounts VALUES(\"{request.username}\", \"{request.password}\", 0, 0, 15, 0, 20, 0, 50);";
+
+                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result > 0)
                 {
                     return "The account for user '" + request.username + "' was successfully created."; 
                 }
@@ -40,7 +41,7 @@ namespace bankIt.Controllers
             try {
                 SQLDriver.cmd.CommandText = $"DELETE FROM bankIt.accounts WHERE username = \"{request.username}\" && password = \"{request.password}\";";
 
-                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result == 1)
+                if (SQLDriver.cmd.ExecuteNonQueryAsync().Result > 0)
                 {
                     return $"The account for user '{request.username}' has been successfully deleted.";
                 }
